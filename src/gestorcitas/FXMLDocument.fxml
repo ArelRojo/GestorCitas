@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gestorcitas.FXMLDocumentController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestorcitas.FXMLDocumentController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -43,5 +43,11 @@
             <Insets left="75.0" />
          </GridPane.margin>
       </ImageView>
+      <Button mnemonicParsing="false" onAction="#nueva" text="Nueva" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#recargar" text="Recargar" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin>
+      </Button>
    </children>
 </GridPane>

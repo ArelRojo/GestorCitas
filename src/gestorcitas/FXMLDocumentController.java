@@ -26,10 +26,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField usuario;
     
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
+  
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -38,6 +35,14 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void logIn(ActionEvent event) {
+    }
+
+    @FXML
+    private void nueva(ActionEvent event) {
+    }
+
+    @FXML
+    private void recargar(ActionEvent event) {
     }
     
 }
