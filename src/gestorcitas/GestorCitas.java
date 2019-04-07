@@ -22,7 +22,7 @@ public class GestorCitas extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
-        
+        System.out.println("Hola desde GIT");
         stage.setScene(scene);
         stage.show();
     }
