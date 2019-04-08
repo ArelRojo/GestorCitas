@@ -2,31 +2,54 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestorcitas.InicioController">
    <left>
-      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #4d94ff; -fx-background-color: #ccffff;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
+            <Button fx:id="inicio" mnemonicParsing="false" prefHeight="55.0" prefWidth="100.0" text="Inicio" />
+            <Button fx:id="pacientesBoton" mnemonicParsing="false" prefHeight="55.0" prefWidth="100.0" text="Pacientes" />
+            <Button fx:id="medicosBoton" mnemonicParsing="false" prefHeight="55.0" prefWidth="100.0" text="Médicos" />
+            <Button fx:id="citasBoton" mnemonicParsing="false" prefHeight="55.0" prefWidth="100.0" text="Citas" />
          </children>
       </VBox>
    </left>
    <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+      <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #ccffff; -fx-border-color: #4d94ff;" BorderPane.alignment="CENTER">
          <children>
+            <Text fill="BLUE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="IPC Medical Services Clinic" textAlignment="JUSTIFY" wrappingWidth="310.13671875">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bell MT" size="27.0" />
+               </font>
+            </Text>
             <Button mnemonicParsing="false" text="Cerrar Sesión">
                <HBox.margin>
-                  <Insets left="490.0" right="20.0" top="50.0" />
+                  <Insets left="170.0" right="20.0" top="50.0" />
                </HBox.margin>
             </Button>
          </children>
       </HBox>
    </top>
+   <center>
+      <HBox fx:id="hbox_center" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vbox_center" prefHeight="300.0" prefWidth="479.0">
+               <children>
+                  <HBox fx:id="hbox2_center" prefHeight="100.0" prefWidth="200.0" />
+                  <HBox fx:id="hbox3_center" prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <ScrollBar fx:id="fx_scrollbar" orientation="VERTICAL" prefHeight="300.0" prefWidth="27.0" />
+         </children>
+      </HBox>
+   </center>
 </BorderPane>

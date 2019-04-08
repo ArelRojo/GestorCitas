@@ -7,42 +7,43 @@ package gestorcitas;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ScrollBar;
-import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
  *
  * @author lisas
  */
-public class InicioController implements Initializable {
+public class FichaPacienteController implements Initializable {
 
     @FXML
-    private Button inicio;
+    private ImageView fotoPaciente;
     @FXML
-    private Button pacientesBoton;
+    private TextField tf_apellido;
     @FXML
-    private Button medicosBoton;
+    private TextField tf_direccion;
     @FXML
-    private Button citasBoton;
+    private TextField tf_localidad;
     @FXML
-    private HBox hbox_center;
+    private TextField tf_nacimiento;
     @FXML
-    private VBox vbox_center;
+    private TextField tf_sexo;
     @FXML
-    private HBox hbox2_center;
+    private TextField tf_nombre;
     @FXML
-    private HBox hbox3_center;
+    private TextField tf_cp;
     @FXML
-    private ScrollBar fx_scrollbar;
-
+    private TextField tf_provincia;
+    @FXML
+    private TextField tf_ssocial;
+    @FXML
+    private TextField tf_telefono;
+    @FXML
+    private TextArea tf_observaciones;
 
     /**
      * Initializes the controller class.
@@ -51,6 +52,5 @@ public class InicioController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
     
 }
