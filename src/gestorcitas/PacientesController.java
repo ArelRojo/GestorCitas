@@ -22,11 +22,11 @@ import javafx.scene.control.TextField;
 public class PacientesController implements Initializable {
 
     @FXML
-    private TableView<?> table_persona;
+    private TableView<?> table_pacientes;
     @FXML
-    private TextField tf_buscar;
+    private TextField tf_buscarPaciente;
     @FXML
-    private Button b_buscar;
+    private Button b_buscarPaciente;
 
     /**
      * Initializes the controller class.

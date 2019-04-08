@@ -37,7 +37,7 @@
          <children>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;">
                <children>
-                  <TableView fx:id="table_persona" layoutX="137.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TableView fx:id="table_pacientes" layoutX="137.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
                       <TableColumn prefWidth="75.0" text="Foto" />
                       <TableColumn prefWidth="75.0" text="DNI" />
@@ -51,8 +51,8 @@
             </AnchorPane>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="tf_buscar" />
-                  <Button fx:id="b_buscar" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+                  <TextField fx:id="tf_buscarPaciente" />
+                  <Button fx:id="b_buscarPaciente" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
                </children>
             </HBox>
          </children>
