@@ -19,8 +19,14 @@ import javafx.scene.control.TextField;
  *
  * @author lisas
  */
-public class InicioController implements Initializable {
+public class MedicosController implements Initializable {
 
+    @FXML
+    private TableView<?> table_persona;
+    @FXML
+    private TextField tf_buscar;
+    @FXML
+    private Button b_buscar;
 
     /**
      * Initializes the controller class.
@@ -30,5 +36,8 @@ public class InicioController implements Initializable {
         // TODO
     }    
 
+    @FXML
+    private void buscar(ActionEvent event) {
+    }
     
 }

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestorcitas.PacientesController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestorcitas.MedicosController">
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
          <children>
@@ -44,7 +44,6 @@
                         <TableColumn prefWidth="75.0" text="Nombre" />
                         <TableColumn prefWidth="75.0" text="Apellidos" />
                         <TableColumn prefWidth="75.0" text="Teléfono" />
-                        <TableColumn prefWidth="124.0" text="Correo electrónico" />
                     </columns>
                   </TableView>
                </children>

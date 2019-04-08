@@ -10,8 +10,6 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 /**
@@ -19,8 +17,12 @@ import javafx.scene.control.TextField;
  *
  * @author lisas
  */
-public class InicioController implements Initializable {
+public class LogInController implements Initializable {
 
+    @FXML
+    private TextField password;
+    @FXML
+    private TextField usuario;
 
     /**
      * Initializes the controller class.
@@ -30,5 +32,16 @@ public class InicioController implements Initializable {
         // TODO
     }    
 
+    @FXML
+    private void logIn(ActionEvent event) {
+    }
+
+    @FXML
+    private void nueva(ActionEvent event) {
+    }
+
+    @FXML
+    private void recargar(ActionEvent event) {
+    }
     
 }
