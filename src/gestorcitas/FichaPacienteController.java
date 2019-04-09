@@ -5,10 +5,13 @@
  */
 package gestorcitas;
 
+import DBAccess.ClinicDBAccess;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
@@ -44,6 +47,8 @@ public class FichaPacienteController implements Initializable {
     private TextField tf_telefono;
     @FXML
     private TextArea tf_observaciones;
+    @FXML
+    private Button b_guardar;
 
     /**
      * Initializes the controller class.
@@ -52,5 +57,9 @@ public class FichaPacienteController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    void myInitialize(ObservableList<ClinicDBAccess> datos, boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

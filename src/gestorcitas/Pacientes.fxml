@@ -39,20 +39,31 @@
                <children>
                   <TableView fx:id="table_pacientes" layoutX="137.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="Foto" />
-                      <TableColumn prefWidth="75.0" text="DNI" />
-                        <TableColumn prefWidth="75.0" text="Nombre" />
-                        <TableColumn prefWidth="75.0" text="Apellidos" />
-                        <TableColumn prefWidth="75.0" text="Teléfono" />
-                        <TableColumn prefWidth="124.0" text="Correo electrónico" />
+                      <TableColumn fx:id="foto" prefWidth="75.0" text="Foto" />
+                      <TableColumn fx:id="dni" prefWidth="75.0" text="DNI" />
+                        <TableColumn fx:id="nom" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="apellidos" prefWidth="75.0" text="Apellidos" />
+                        <TableColumn fx:id="telef" prefWidth="75.0" text="Teléfono" />
+                        <TableColumn fx:id="email" prefWidth="124.0" text="Correo electrónico" />
                     </columns>
                   </TableView>
                </children>
             </AnchorPane>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="tf_buscarPaciente" />
-                  <Button fx:id="b_buscarPaciente" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+                  <TextField fx:id="tf_buscarPaciente">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin></TextField>
+                  <Button fx:id="b_buscarPaciente" mnemonicParsing="false" onAction="#buscar" text="Buscar">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button alignment="TOP_CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#b_add" text="Añadir paciente">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
                </children>
             </HBox>
          </children>
